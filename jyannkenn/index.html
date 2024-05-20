@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけんゲーム</title>
+    <style>
+        div {
+            margin-top: 30px;
+            text-align: center;
+            font-size: large;
+            background-color: wheat;
+        }
+        input{
+             /*ボタンのサイズ*/
+            width: 100px;
+            height: 100px;
+            /*ボタンの文字サイズ*/
+            font-size: x-large;
+            /*ボタンの詳細設定*/
+            border: none;
+            border-radius: 100px;
+        }
+        .gu{
+            background-color: brown;
+        }
+        .chyo{
+            background-color: yellow;
+        }
+        .pa{
+            background-color: skyblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>コンピューター：<span id="com"></span></p>
+        <p>結果：<span id="result"></span></p>
+        <p>あなた：<span id="me"></span></p>
+        <input type="button"  class="gu" value="グー" onclick="judge(0)">
+        <input type="button" class="chyo" value="チョキ" onclick="judge(1)">
+        <input type="button" class="pa" value="パー" onclick="judge(2)">
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
